@@ -8,21 +8,19 @@ public class TaskEight {
     // task 8
 
     public static void fillDiagonal() {
-        int[][] arr = new int[4][4];
-        for (int i = 0; i < 4; i++) {
-            for (int j = 0; j < 4; j++) {
-                if (i == j) {
-                    System.out.print("1 ");
-                } else {
-                    System.out.print("0 ");
-                }
+        int[][] arr = new int[7][7];
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0, b = arr[i].length - 1; j < arr[i].length; j++, b--) {
+                if (i == j || i == b) arr[i][j] = 1;
+                else arr[i][j] = 0;
+                System.out.print(arr[i][j]);
             }
             System.out.println();
-
         }
-
     }
+
 }
+
 
 
 

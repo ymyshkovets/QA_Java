@@ -9,8 +9,8 @@ public class TaskThree {
 
     public static boolean doNumber(int a) {
 
-        if (a >= 0) return true;
-        else return false;
+        if (a >= 0) return false;
+        else return true;
 
     }
 }

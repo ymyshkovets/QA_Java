@@ -10,9 +10,7 @@ public class TaskFourYear {
     // task 4 *
 
     public static boolean year(int a) {
-        if ((a % 4 == 0) && (a % 400 == 0)) return true;
-        else if ((a % 100 == 0)) return false;
-        else return false;
+        return (((a % 4 == 0 && a % 100 != 0) || (a % 400 == 0)) && a != 0);
 
     }
 
