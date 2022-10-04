@@ -37,12 +37,6 @@ public class MainApp {
     }
 
 
-    class MyArraySizeException extends Exception {
-        public MyArraySizeException(String message) {
-            super(message);
-        }
-    }
-
     public int stringDataExceptionTest(String[][] arr) throws MyArrayDataException {
         int sum = 0;
         for (int i = 0; i < arr.length; i++) {
@@ -64,14 +58,5 @@ public class MainApp {
         return sum;
     }
 
-    class MyArrayDataException extends Exception {
-        public int i;
-        public int j;
 
-        public MyArrayDataException(int i, int j) {
-
-            this.i = i;
-            this.j = j;
-        }
-    }
 }
